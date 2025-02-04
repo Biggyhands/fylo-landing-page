@@ -4,3 +4,40 @@
   margin: 0;
   padding: 0;
 }
+
+:root {
+  /* Colors */
+
+  /* Primary */
+  --color-primary-dark-blue-intro: hsl(217, 28%, 15%);
+  --color-primary-dark-blue-main: hsl(218, 28%, 13%);
+  --color-primary-dark-blue-footer: hsl(216, 53%, 9%);
+  --color-primary-dark-blue-testimonials: hsl(219, 30%, 18%);
+
+  /* Accent */
+  --color-accent-cyan: hsl(176, 68%, 64%);
+  --color-accent-blue: hsl(198, 60%, 50%);
+  --color-accent-light-red: hsl(0, 100%, 63%); /* Error */
+
+  /* Neutral */
+  --color-neutral-white: hsl(0, 0%, 100%);
+
+  /* Typography */
+
+  /* Headings, Call-to-actions, Header Navigation */
+  --font-family-headings: "Raleway", sans-serif;
+  --font-weight-headings-regular: 400;
+  --font-weight-headings-bold: 700;
+
+  /* Body */
+  --font-family-body: "Open Sans", sans-serif;
+  --font-weight-body-regular: 400;
+  --font-weight-body-bold: 700;
+
+  --font-size-body: 14px; /* Base body copy font size */
+}
+
+body {
+  background-color: var(--color-primary-dark-blue-intro);
+  color: var(--color-neutral-white);
+}
