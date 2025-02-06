@@ -1,4 +1,5 @@
 import React from "react";
+import CurvyPicture from "./CurvyPicture";
 
 export const GetStartedContainer = () => {
   return (
@@ -12,6 +13,7 @@ export const GetStartedContainer = () => {
         co-workers.
       </p>
       <button>Get Started</button>
+      <CurvyPicture />
     </section>
   );
 };

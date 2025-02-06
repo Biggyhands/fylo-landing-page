@@ -20,7 +20,7 @@ export default function CurvyPicture() {
   return (
     <>
       <img
-        className=""
+        className="curvy-background"
         src={isMobileView ? CurvyPictureMobile : CurvyPictureDesktop}
         alt="Curvy Background"
       />

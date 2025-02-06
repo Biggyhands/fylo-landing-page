@@ -10,7 +10,7 @@
 
   /* Primary */
   --color-primary-dark-blue-intro: hsl(217, 28%, 15%);
-  --color-primary-dark-blue-main: hsl(218, 28%, 13%);
+  --color-primary-dark-blue-main: hsl(220, 27%, 13%);
   --color-primary-dark-blue-footer: hsl(216, 53%, 9%);
   --color-primary-dark-blue-testimonials: hsl(219, 30%, 18%);
 
@@ -107,13 +107,12 @@ main {
   align-items: center;
   width: 100%;
   height: 400px;
-  margin: 40px 0;
+  margin: 20px 0;
 }
 .illustration-intro-container img {
-  width: 80%;
+  width: 75%;
   height: 400px;
 }
-
 /*Get Started Section*/
 
 .get-started-container {
@@ -125,8 +124,13 @@ main {
   justify-content: space-around;
   padding: 20px;
   text-align: center;
+  position: relative;
+  background: linear-gradient(
+    to top,
+    var(--color-primary-dark-blue-main) 75%,
+    transparent 50%
+  );
 }
-
 .get-started-container h1 {
   font-family: var(--font-family-headings);
   font-weight: var(--font-weight-headings-bold);
@@ -156,7 +160,13 @@ main {
 button:active {
   transform: scale(0.95);
 }
-
+.curvy-background {
+  width: 98vw;
+  height: 200px;
+  z-index: -1;
+  position: absolute;
+  top: -70px;
+}
 /*----*/
 
 /*----media queries----*/
@@ -174,37 +184,71 @@ button:active {
 /*768*/
 
 @media (min-width: 768px) and (max-width: 1023px) {
+  /*Header*/
   header {
     height: 15vh;
+    padding: 0 3rem;
   }
 
   nav img {
     width: 100px;
     height: 40px;
   }
+
+  .illustration-intro-container img {
+    width: 80%;
+    height: 400px;
+  }
+
+  /*Intro Illustration*/
+
+  .illustration-intro-container img {
+    width: 400px;
+    height: 400px;
+  }
 }
 /*1024*/
 
 @media (min-width: 1024px) and (max-width: 1439px) {
+  /*Header*/
+
   header {
     height: 15vh;
+    padding: 0 3rem;
   }
 
   nav img {
     width: 140px;
     height: 40px;
   }
+
+  /*Intro Illustration*/
+
+  .illustration-intro-container img {
+    width: 400px;
+    height: 400px;
+  }
 }
 
 /*1440*/
 @media (min-width: 1440px) {
+  /*Header*/
+
   header {
     height: 15vh;
+    padding: 0 3rem;
   }
 
   nav img {
     width: 140px;
     height: 50px;
+  }
+
+  /*Intro Illustration*/
+
+  .illustration-intro-container img {
+    width: 800px;
+    height: 450px;
   }
 }
 
