@@ -1,8 +1,8 @@
 /*-Reset styles*/
 * {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 :root {
@@ -40,4 +40,72 @@
 body {
   background-color: var(--color-primary-dark-blue-intro);
   color: var(--color-neutral-white);
+  width: 375px;
+  height: 820px;
+  font-family: var(--font-family-body);
+  font-weight: var(--font-weight-body-regular);
 }
+
+/*-Header & Navbar styles-*/
+
+header {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 2rem;
+  border: 1px dotted red;
+}
+
+/*----*/
+
+/*----media queries----*/
+
+/*375*/
+
+/*@media (min-width: 375px) and (max-width: 424px) {
+}*/
+
+/*
+
+
+
+header {
+  display: flex;
+  width: 1000%;
+  height: 20%;
+  border: 1px dotted red;
+  align-items: center;
+  padding: 1.5rem 2rem;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 20%;
+}
+
+nav img {
+  width: 60px;
+  height: 35px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li {
+  font-size: 12px;
+  margin-right: 1rem;
+}
+
+nav ul li:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  font-weight: 700;
+}
+
+
+*/
