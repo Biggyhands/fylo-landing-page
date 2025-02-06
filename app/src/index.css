@@ -15,8 +15,8 @@
   --color-primary-dark-blue-testimonials: hsl(219, 30%, 18%);
 
   /* Accent */
-  --color-accent-cyan: hsl(176, 68%, 64%);
-  --color-accent-blue: hsl(198, 60%, 50%);
+  --color-accent-cyan: hsl(187, 61%, 72%);
+  --color-accent-blue: hsl(194, 60%, 53%);
   --color-accent-light-red: hsl(0, 100%, 63%); /* Error */
 
   /* Neutral */
@@ -52,7 +52,6 @@ header {
   display: flex;
   width: 100%;
   height: 20%;
-  border: 1px dotted red;
   align-items: center;
   padding: 1.5rem 1.5rem;
 }
@@ -89,6 +88,73 @@ nav ul li:hover {
 nav ul li:active {
   font-weight: 800;
   color: hsla(0, 0%, 100%, 0.767);
+}
+
+/*----*/
+
+/*--Main Styles--*/
+
+main {
+  border: 1px dotted red;
+  width: 100vw;
+  min-height: 100vh;
+}
+
+/*Intro Illustration*/
+.illustration-intro-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 400px;
+  margin: 40px 0;
+}
+.illustration-intro-container img {
+  width: 80%;
+  height: 400px;
+}
+
+/*Get Started Section*/
+
+.get-started-container {
+  border: 1px dotted rgb(11, 218, 63);
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 20px;
+  text-align: center;
+}
+
+.get-started-container h1 {
+  font-family: var(--font-family-headings);
+  font-weight: var(--font-weight-headings-bold);
+}
+
+.get-started-container p {
+  font-family: var(--font-family-body);
+  font-weight: var(--font-weight-body-regular);
+}
+
+.get-started-container button {
+  background-color: var(--color-accent-blue);
+  color: var(--color-neutral-white);
+  font-family: var(--font-family-body);
+  width: 297px;
+  height: 50px;
+  border-radius: 50px;
+  border: none;
+  font-weight: var(--font-weight-body-bold);
+  transition: transform 0.2s ease-in-out;
+}
+
+.get-started-container button:hover {
+  cursor: pointer;
+  background-color: var(--color-accent-cyan);
+}
+button:active {
+  transform: scale(0.95);
 }
 
 /*----*/
