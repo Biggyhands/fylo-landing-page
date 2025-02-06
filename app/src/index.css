@@ -113,6 +113,8 @@ main {
   width: 75%;
   height: 400px;
 }
+/*----*/
+
 /*Get Started Section*/
 
 .get-started-container {
@@ -167,7 +169,6 @@ button:active {
   position: absolute;
   top: -70px;
 }
-/*----*/
 
 /*----media queries----*/
 
@@ -206,6 +207,32 @@ button:active {
     width: 400px;
     height: 400px;
   }
+
+  /*Get started container*/
+
+  .get-started-container {
+    background: none;
+    padding: 0 140px;
+  }
+
+  .get-started-container h1 {
+    font-size: 26px;
+  }
+
+  .get-started-container p {
+    font-size: 18px;
+  }
+
+  .get-started-container button {
+    font-size: 16;
+  }
+  .curvy-background {
+    width: 99vw;
+    height: 380px;
+    z-index: -1;
+    position: absolute;
+    top: 120px;
+  }
 }
 /*1024*/
 
@@ -228,6 +255,40 @@ button:active {
     width: 400px;
     height: 400px;
   }
+
+  /*Get started container*/
+
+  .get-started-container {
+    background: none;
+    padding: 0 140px;
+    justify-content: space-evenly;
+    text-align: center;
+  }
+
+  .get-started-container h1 {
+    font-size: 28px;
+    padding: 0 60px;
+  }
+
+  .get-started-container p {
+    font-size: 20px;
+    padding: 0 60px;
+  }
+
+  .get-started-container button {
+    font-size: 16;
+  }
+  .curvy-background {
+    width: 99vw;
+    height: 380px;
+    z-index: -1;
+    position: absolute;
+    top: 120px;
+  }
+
+  .get-started-container button {
+    height: 60px;
+  }
 }
 
 /*1440*/
@@ -249,6 +310,40 @@ button:active {
   .illustration-intro-container img {
     width: 800px;
     height: 450px;
+  }
+
+  /*Get started container*/
+
+  .get-started-container {
+    background: none;
+    padding: 0 140px;
+    justify-content: space-evenly;
+    text-align: center;
+  }
+
+  .get-started-container h1 {
+    font-size: 28px;
+    padding: 0 300px;
+  }
+
+  .get-started-container p {
+    font-size: 20px;
+    padding: 0 280px;
+  }
+
+  .get-started-container button {
+    font-size: 16;
+  }
+  .curvy-background {
+    width: 99vw;
+    height: 380px;
+    z-index: -1;
+    position: absolute;
+    top: 120px;
+  }
+
+  .get-started-container button {
+    height: 60px;
   }
 }
 
