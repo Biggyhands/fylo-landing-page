@@ -5,6 +5,7 @@ import { FeaturesContainer } from "./FeaturesContainer";
 export default function MainContainer() {
   return (
     <main>
+      {" "}
       <IllustrationIntroContainer />
       <GetStartedContainer />
       <FeaturesContainer />

@@ -5,8 +5,8 @@ export const FeaturesContainer = () => {
   return (
     <section className="features-container">
       {featuresData.map((feature) => (
-        <div className="features-card">
-          <img src={feature.icon} key={feature.id} alt={feature.title} />
+        <div className="features-card" key={feature.id}>
+          <img src={feature.icon} alt={feature.title} />
           <h3>{feature.title}</h3>
           <p>{feature.description}</p>
         </div>
