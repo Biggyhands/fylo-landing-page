@@ -4,6 +4,7 @@ import MainContainer from "./components/MainContainer";
 function App() {
   return (
     <>
+      {" "}
       <Navbar />
       <MainContainer />
     </>
