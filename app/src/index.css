@@ -95,7 +95,6 @@ nav ul li:active {
 /*--Main Styles--*/
 
 main {
-  border: 1px dotted red;
   width: 100vw;
   min-height: 100vh;
 }
@@ -118,7 +117,6 @@ main {
 /*Get Started Section*/
 
 .get-started-container {
-  border: 1px dotted rgb(11, 218, 63);
   height: 500px;
   display: flex;
   flex-direction: column;
@@ -169,6 +167,8 @@ button:active {
   position: absolute;
   top: -70px;
 }
+
+/*Features Style*/
 
 /*----media queries----*/
 
@@ -288,6 +288,8 @@ button:active {
 
   .get-started-container button {
     height: 60px;
+    position: relative;
+    top: -40px;
   }
 }
 
@@ -344,6 +346,8 @@ button:active {
 
   .get-started-container button {
     height: 60px;
+    position: relative;
+    top: -40px;
   }
 }
 
