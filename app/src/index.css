@@ -145,7 +145,7 @@ main {
   background-color: var(--color-accent-blue);
   color: var(--color-neutral-white);
   font-family: var(--font-family-body);
-  width: 297px;
+  width: 250px;
   height: 50px;
   border-radius: 50px;
   border: none;
@@ -157,11 +157,11 @@ main {
   cursor: pointer;
   background-color: var(--color-accent-cyan);
 }
-button:active {
+.get-started-container button:active {
   transform: scale(0.95);
 }
 .curvy-background {
-  width: 98vw;
+  width: 100vw;
   height: 200px;
   z-index: -1;
   position: absolute;
@@ -169,7 +169,27 @@ button:active {
 }
 
 /*Features Style*/
+.features-container {
+  background-color: var(--color-primary-dark-blue-main);
+  display: flex;
+  flex-direction: column;
+}
 
+.features-card {
+  min-height: 300px;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 0px 20px;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.features-card img {
+  width: 80px;
+}
 /*----media queries----*/
 
 /*375*/
@@ -180,6 +200,10 @@ button:active {
 /*425*/
 
 @media (min-width: 425px) and (max-width: 767px) {
+  /*Features styles*/
+  .features-card {
+    padding: 0 25px;
+  }
 }
 
 /*768*/
@@ -232,6 +256,20 @@ button:active {
     z-index: -1;
     position: absolute;
     top: 120px;
+  }
+
+  /*Features Style*/
+  .features-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .features-card {
+    width: 250px;
+    margin: 20px 40px;
+
+    padding: 0px 0px;
   }
 }
 /*1024*/
@@ -291,6 +329,20 @@ button:active {
     position: relative;
     top: -40px;
   }
+
+  /*Features Style*/
+  .features-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .features-card {
+    width: 300px;
+    margin: 20px 40px;
+
+    padding: 0px 0px;
+  }
 }
 
 /*1440*/
@@ -348,6 +400,20 @@ button:active {
     height: 60px;
     position: relative;
     top: -40px;
+  }
+
+  /*Features Style*/
+  .features-container {
+    width: 100vw;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .features-card {
+    width: 400px;
+    margin: 20px 60px;
+
+    padding: 0px 34px;
   }
 }
 
