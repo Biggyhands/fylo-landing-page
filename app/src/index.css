@@ -191,6 +191,57 @@ main {
 .features-card img {
   width: 80px;
 }
+
+/*detail container*/
+
+.detail-container {
+  background-color: var(--color-primary-dark-blue-main);
+  min-height: 600px;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.detai-illustration {
+  width: 90%;
+  height: 280px;
+  margin-bottom: 20px;
+}
+
+.detail-card {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+}
+
+.detail-card h1 {
+  margin-bottom: 20px;
+  font-size: 16px;
+  text-align: center;
+}
+
+.detail-card p {
+  margin-bottom: 20px;
+}
+
+.detail-link {
+  color: var(--color-accent-cyan);
+  text-decoration: underline;
+  text-underline-offset: 10px;
+}
+.detail-link:hover {
+  cursor: pointer;
+  color: var(var(--color-neutral-white));
+}
+
+.a-image {
+  position: relative;
+  top: 4px;
+}
+/*---*/
 /*----media queries----*/
 
 /*375*/
@@ -209,6 +260,11 @@ main {
 
   .features-card {
     padding: 0 25px;
+  }
+
+  /*Detail container style*/
+  .detail-card {
+    padding: 20px;
   }
 }
 
@@ -276,6 +332,20 @@ main {
     margin: 20px 40px;
 
     padding: 0px 0px;
+  }
+  /*Detail container*/
+
+  /*Detail container style*/
+  .detail-card {
+    padding: 120px;
+  }
+
+  .detail-card h1 {
+    font-size: 28px;
+  }
+
+  .detail-card p {
+    font-size: 18px;
   }
 }
 /*1024*/
@@ -349,6 +419,29 @@ main {
 
     padding: 0px 0px;
   }
+
+  /*Detail container style*/
+
+  .detail-container {
+    flex-direction: row;
+  }
+  .detai-illustration {
+    width: 500px;
+    height: 400px;
+  }
+  .detail-card {
+    padding: 50px;
+  }
+
+  .detail-card h1 {
+    font-size: 28px;
+    text-align: left;
+    padding: 0 20px;
+  }
+
+  .detail-card p {
+    font-size: 18px;
+  }
 }
 
 /*1440*/
@@ -421,6 +514,30 @@ main {
 
     padding: 0px 50px;
   }
+
+  /*Detail container style*/
+
+  .detail-container {
+    flex-direction: row;
+  }
+  .detai-illustration {
+    width: 500px;
+    height: 400px;
+  }
+  .detail-card {
+    padding: 0 40px;
+    width: 500px;
+  }
+
+  .detail-card h1 {
+    font-size: 28px;
+    text-align: left;
+    padding-right: 60px;
+  }
+
+  .detail-card p {
+    font-size: 18px;
+  }
 }
 
 /*1740*/
@@ -472,7 +589,7 @@ main {
   .features-container {
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-evenly;
   }
 
   .features-card {
@@ -480,6 +597,32 @@ main {
     margin: 20px 40px;
 
     padding: 0px 80px;
+  }
+
+  /*Detail container style*/
+
+  .detail-container {
+    flex-direction: row;
+    width: 100vw;
+  }
+  .detai-illustration {
+    width: 600px;
+    height: 450px;
+    margin-right: 40px;
+  }
+  .detail-card {
+    padding: 0 40px;
+    width: 600px;
+  }
+
+  .detail-card h1 {
+    font-size: 36px;
+    text-align: left;
+    padding-right: 60px;
+  }
+
+  .detail-card p {
+    font-size: 18px;
   }
 }
 /**/
