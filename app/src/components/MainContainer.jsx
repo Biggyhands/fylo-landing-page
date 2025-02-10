@@ -4,6 +4,8 @@ import { GetStartedContainer } from "./GetStartedContainer";
 import { FeaturesContainer } from "./FeaturesContainer";
 import { DetailContainer } from "./DetailContainer";
 import TestimonyContainer from "./TestimonyContainer";
+import { FormContainer } from "./FormContainer";
+
 export default function MainContainer() {
   return (
     <>
@@ -12,6 +14,7 @@ export default function MainContainer() {
       <FeaturesContainer />
       <DetailContainer />
       <TestimonyContainer />
+      <FormContainer />
     </>
   );
 }

@@ -294,6 +294,145 @@ main {
 
 /**/
 
+/*Form Container Style*/
+
+.form-container {
+  width: 100%;
+  min-height: 600px;
+  background-color: var(--color-primary-dark-blue-main);
+  box-shadow: inset 0 -300px 0 var(--color-primary-dark-blue-footer);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-primary-dark-blue-main);
+}
+
+.form-card {
+  width: 85%;
+  height: 400px;
+  background-color: var(--color-primary-dark-blue-main);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  box-shadow: 6px 4px 4px 4px rgba(0, 0, 0, 0.2);
+}
+
+form input {
+  width: 90%;
+  height: 50px;
+  border-radius: 25px;
+  text-align: center;
+  border: none;
+  margin-bottom: 20px;
+}
+
+form input::placeholder {
+  color: rgb(173, 173, 173);
+}
+
+form button {
+  width: 90%;
+  height: 50px;
+  border-radius: 25px;
+  text-align: center;
+  border: none;
+  background-color: var(--color-accent-blue);
+  color: var(--color-neutral-white);
+  font-weight: bold;
+  margin-bottom: 10px;
+  transition: transform 0.2s ease-in-out;
+}
+
+form button:hover {
+  cursor: pointer;
+  background-color: var(--color-accent-cyan);
+}
+
+form button:active {
+  transform: scale(0.95);
+}
+
+.hidden {
+  display: none;
+}
+
+.error {
+  color: red;
+  display: inline-block;
+}
+
+/**/
+
+/*Footer Container Style*/
+footer {
+  background-color: var(--color-primary-dark-blue-footer);
+  width: 100%;
+  min-height: 500px;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-card {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-evenly;
+}
+
+.footer-card img {
+  width: 200px;
+  height: 80px;
+}
+
+footer li {
+  list-style: none;
+}
+
+footer li a {
+  text-decoration: none;
+  color: var(--color-neutral-white);
+}
+
+footer li a:hover {
+  font-weight: bold;
+  cursor: pointer;
+}
+.social-icons {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.social-icons ul {
+  display: flex;
+  width: 60%;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.social-icons svg {
+  width: 40px;
+}
+
+.footer-location-icon {
+  position: relative;
+  top: 5px;
+  margin-right: 10px;
+}
+
+.footer-card p {
+}
+
+.social-icons svg:hover {
+  cursor: pointer;
+  color: var(--color-accent-cyan);
+}
+/**/
 /*----media queries----*/
 
 /*375*/
@@ -417,6 +556,33 @@ main {
 
   .testimony-card {
     width: 360px;
+  }
+
+  /*Form Container Style*/
+
+  .form-card {
+    width: 90%;
+  }
+
+  .form-card h1 {
+    font-size: 26px;
+  }
+  .form-card p {
+    padding: 0 30px;
+  }
+  form {
+    width: 100%;
+  }
+  form input {
+    width: 60%;
+
+    margin-right: 20px;
+    margin-bottom: 20px;
+  }
+
+  form button {
+    width: 30%;
+    height: 50px;
   }
 }
 /*1024*/
@@ -548,6 +714,66 @@ main {
   .testimony-title {
     font-weight: 200;
     font-size: 10px;
+  }
+
+  /*Form Container Style*/
+
+  .form-card {
+    width: 90%;
+    height: 300px;
+  }
+
+  .form-card h1 {
+    font-size: 26px;
+  }
+  .form-card p {
+    padding: 0 40px;
+  }
+  form {
+    width: 100%;
+  }
+  form input {
+    width: 60%;
+
+    margin-right: 20px;
+    margin-bottom: 20px;
+  }
+
+  form button {
+    width: 30%;
+    height: 50px;
+  }
+
+  /*Footer Style*/
+  footer {
+    height: 300px;
+  }
+  .footer-card {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .footer-card img {
+    position: absolute;
+    transform: translate(
+      10px,
+      -90px
+    ); /* Desplaza la imagen 10px a la derecha y 20px hacia abajo */
+  }
+  .social-icons {
+    width: 250px;
+  }
+
+  .footer-contact,
+  .footer-details,
+  .footer-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  .footer-links a {
+    margin-bottom: 10px;
   }
 }
 
@@ -695,6 +921,34 @@ main {
   .testimony-description {
     font-size: 16px;
   }
+
+  /*Form Container Style*/
+
+  .form-card {
+    width: 922px;
+    height: 300px;
+  }
+
+  .form-card h1 {
+    font-size: 26px;
+  }
+  .form-card p {
+    padding: 0 40px;
+  }
+  form {
+    width: 100%;
+  }
+  form input {
+    width: 60%;
+
+    margin-right: 20px;
+    margin-bottom: 20px;
+  }
+
+  form button {
+    width: 30%;
+    height: 50px;
+  }
 }
 
 /*1740*/
@@ -806,9 +1060,6 @@ main {
     justify-content: space-between;
   }
 
-  .testimony-profile {
-  }
-
   .testimony-profile img {
     width: 30px;
     border-radius: 50%;
@@ -831,6 +1082,34 @@ main {
 
   .testimony-description {
     font-size: 16px;
+  }
+
+  /*Form Container Style*/
+
+  .form-card {
+    width: 922px;
+    height: 300px;
+  }
+
+  .form-card h1 {
+    font-size: 26px;
+  }
+  .form-card p {
+    padding: 0 40px;
+  }
+  form {
+    width: 100%;
+  }
+  form input {
+    width: 60%;
+
+    margin-right: 20px;
+    margin-bottom: 20px;
+  }
+
+  form button {
+    width: 30%;
+    height: 50px;
   }
 }
 /**/
