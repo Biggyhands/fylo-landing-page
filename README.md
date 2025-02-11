@@ -49,7 +49,7 @@ This project implements a landing page with a mobile first - responsive design a
 
 **Demo**
 
-- **deploy:** [**NO YET**](https://harmonious-pavlova-1651fc.netlify.app/)
+- **deploy:** https://harmonious-pavlova-1651fc.netlify.app/
 
 
 
