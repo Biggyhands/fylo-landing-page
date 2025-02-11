@@ -8,7 +8,7 @@ This challenge and the assets used in this repository are **NOT** my original wo
 - **[Frontend Mentor](https://www.frontendmentor.io/challenges/fylo-dark-theme-landing-page-5ca5f2d21e82137ec91a50fd):** Here you can check the challenge description.
 
 **Project Description**
-This project implements a landing page with a responsive design and basic error handling. The main goal was to recreate the challenge proposed by Frontend Mentor to practice my HTML, CSS, and React JS skills .
+This project implements a landing page with a mobile first - responsive design and basic error handling. The main goal was to recreate the challenge proposed by Frontend Mentor to practice my HTML, CSS, and React JS skills .
 
 - **Features**:
 
@@ -20,7 +20,7 @@ This project implements a landing page with a responsive design and basic error 
 
 - Allows users to enter their email address.
 - ludes basic email format validation.
-- splays a success message upon submitting a valid email.
+- splays an error message if submitting an invalid email.
 
 **Responsive Design:**
 
@@ -49,4 +49,12 @@ This project implements a landing page with a responsive design and basic error 
 
 **Demo**
 
-- **deploy:** **NO YET**
+- **deploy:** https://harmonious-pavlova-1651fc.netlify.app/
+
+
+
+https://github.com/user-attachments/assets/f888df4b-0eaf-4396-9d62-05e11d485244
+
+
+
+
