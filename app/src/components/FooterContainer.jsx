@@ -92,32 +92,32 @@ export default function FooterContainer() {
             example@fylo.com
           </p>
         </div>
-        <div>
-          <ul className="footer-details">
+        <div className="footer-details">
+          <ul>
             <li>
-              <a href="#">About Us</a>
+              <p href="#">About Us</p>
             </li>
             <li>
-              <a href="#">Jobs</a>
+              <p href="#">Jobs</p>
             </li>
             <li>
-              <a href="#">Press</a>
+              <p href="#">Press</p>
             </li>
             <li>
-              <a href="#">Blog</a>
+              <p href="#">Blog</p>
             </li>
           </ul>
         </div>
         <div className="footer-links">
           <ul>
             <li>
-              <a href="#">Contact Us</a>
+              <p>Contact Us</p>
             </li>
             <li>
-              <a href="#">Terms</a>
+              <p>Terms</p>
             </li>
             <li>
-              <a href="#">Privacy</a>
+              <p>Privacy</p>
             </li>
           </ul>
         </div>
